@@ -4,6 +4,14 @@
   "description": "基于 SVSmate 核心能力的命令行工具，面向 agent 和终端使用。",
   "author": "ybw051114 <12413035@mail.sustech.edu.cn>",
   "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoonWonder/svsmate-agent-cli.git"
+  },
+  "homepage": "https://github.com/MoonWonder/svsmate-agent-cli#readme",
+  "bugs": {
+    "url": "https://github.com/MoonWonder/svsmate-agent-cli/issues"
+  },
   "keywords": [
     "svsmate",
     "cli",
