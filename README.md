@@ -171,3 +171,9 @@ node dist/cli.js materials download --url "<文件 URL>" --target ./target.pdf -
 ## 安全说明
 
 为了方便自动化，`auth login --save` 会将凭据写入本地 `config/secrets.json`。这是明文文件存储，不等价于系统钥匙串，适合本机受控环境，不适合高敏感场景。
+
+## 致谢
+
+本项目的能力抽取与命令行封装工作，建立在原项目 [SVSmate](https://github.com/naivecynics/SVSmate) 的设计与实现基础之上。
+
+感谢原作者与贡献者对南科大 Blackboard 使用体验改进所做的工作。
