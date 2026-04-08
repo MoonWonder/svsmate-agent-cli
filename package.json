@@ -1,0 +1,50 @@
+{
+  "name": "svsmate-agent-cli",
+  "version": "0.1.0",
+  "description": "基于 SVSmate 核心能力的命令行工具，面向 agent 和终端使用。",
+  "author": "ybw051114 <12413035@mail.sustech.edu.cn>",
+  "license": "UNLICENSED",
+  "keywords": [
+    "svsmate",
+    "cli",
+    "blackboard",
+    "sustech",
+    "agent"
+  ],
+  "files": [
+    "dist/**/*",
+    "LICENSE",
+    "README.md",
+    "docs/agent-usage.md"
+  ],
+  "bin": {
+    "svsmate-agent": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "node -e \"require('fs').rmSync('dist', { recursive: true, force: true })\"",
+    "build": "npm run clean && tsc -p tsconfig.json",
+    "check": "tsc --noEmit -p tsconfig.json",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.0",
+    "fetch-cookie": "^3.1.0",
+    "node-fetch": "^2.7.0",
+    "node-ical": "^0.22.1",
+    "p-limit": "^7.1.1",
+    "tough-cookie": "^5.1.2",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/node-fetch": "^2.6.12",
+    "@types/xml2js": "^0.4.14",
+    "typescript": "^5.8.3"
+  }
+}
